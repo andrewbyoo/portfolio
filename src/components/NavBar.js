@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function NavBar({ currentPage, handlePageChange }) {
   return (
     <div>
