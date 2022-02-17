@@ -1,16 +1,14 @@
 import React from 'react';
 
-export default function NavBar() {
+export default function NavBar({ currentPage, handlePageChange }) {
   return (
     <div bg="dark" variant="dark">
-      <article>
-        <h1 href="#home">Andrew Yoo</h1>
-        <section className="me-auto">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-        </section>
-      </article>
+      <ul className="nav nav-tabs">
+        <li><h1 href="#home">Andrew Yoo</h1></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </div>
   );
 };
