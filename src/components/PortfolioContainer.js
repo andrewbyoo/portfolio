@@ -5,5 +5,22 @@ import About from './pages/About';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
-  return
+
+  const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'About') {
+      return <About />;
+    }
+  }
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  return (
+    <div>
+      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+    </div>
+  )
 }
