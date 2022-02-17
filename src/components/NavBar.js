@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function NavBar({ currentPage, handlePageChange }) {
   return (
-    <div bg="dark" variant="dark">
-      <ul className="nav nav-tabs">
-        <li><h1 href="#home">Andrew Yoo</h1></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+    <div>
+      <ul className='nav nav-tabs'>
+        <li className='nav-item'><h1 href='#about' onClick={() => handlePageChange('About')}>Andrew Yoo</h1></li>
+        <li className='nav-item'><a href='#home'>Home</a></li>
+        <li className='nav-item'><a href='#about'>About</a></li>
+        <li className='nav-item'><a href='#projects'>Projects</a></li>
       </ul>
     </div>
   );
