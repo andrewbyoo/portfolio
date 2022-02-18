@@ -2,6 +2,7 @@ header {
   background-color: #376F7B;
   position: sticky;
   top: 0;
+  width: 100vw;
   z-index: 99;
 }
 
