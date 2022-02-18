@@ -20,10 +20,6 @@ header {
   border: 1px none !important;
 }
 
-.nav-link:focus {
-  border: 1px none !important;
-}
-
 .nav-link:hover {
   background-color: #fff !important;
   color: #376F7B !important;
