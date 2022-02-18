@@ -1,3 +1,29 @@
 .renderContainer {
   background-color: rgba(164, 205, 214, 0.3);
 }
+
+.bg-image {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.pageRender {
+  padding-top: 87px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepageRender {
+  background-color: rgba(255, 255, 255, .3);
+  padding: 5px;
+  border-radius: 2rem;
+}
