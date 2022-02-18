@@ -28,7 +28,11 @@ export default function PortfolioContainer() {
   return (
     <div className='renderContainer'>
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <div className='bg-image' style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background-image.jpg')` }}>
+        <div className='pageRender'>
+          {renderPage()}
+        </div>
+      </div>
     </div>
   );
 }
