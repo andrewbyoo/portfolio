@@ -1,6 +1,12 @@
+header {
+  background-color: #376F7B;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 .navbar-brand {
-  padding: 20px;
-  margin: 5px;
+  margin: 15px;
 }
 
 .nav-item {
