@@ -30,3 +30,9 @@ header {
 .navbar-toggler {
   background-color: #fff !important;
 }
+
+@media (min-width: 768px){
+.navbar-collapse {
+  justify-content: end;
+}
+}
