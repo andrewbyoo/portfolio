@@ -8,13 +8,13 @@ html {
   font-family: 'Montserrat', 'Source Code Pro', sans-serif, monospace;
 }
 
-html::before {
+html::after {
   content: "";
   background-image: url('./assets/background-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 0px;
+  top: -100px;
   right: 0px;
   bottom: 0px;
   left: 0px;
