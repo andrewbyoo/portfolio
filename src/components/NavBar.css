@@ -7,8 +7,23 @@ header {
 
 .navbar-brand {
   margin: 15px;
+  color: #fff;
 }
 
 .nav-item {
   padding: 25px;
+}
+
+.nav-link {
+  border-radius: 0.25rem;
+  color: #fff !important;
+}
+
+.nav-link:focus {
+  border: 1px none !important;
+}
+
+.nav-link:hover {
+  background-color: #fff !important;
+  color: #376F7B !important;
 }
