@@ -17,6 +17,7 @@ header {
 .nav-link {
   border-radius: 0.25rem;
   color: #fff !important;
+  border: 1px none !important;
 }
 
 .nav-link:focus {
