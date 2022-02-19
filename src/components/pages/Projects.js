@@ -9,7 +9,7 @@ const projectList = [
     // screenshot: require('imagepath'),
     altDesc: 'Project 1 screenshot alt description',
     description: 'Project Description 1',
-    deployedLink: 'Deployed Link 1',
+    deployedLink: null,
     githubLink: 'Github Link 1',
   },
   {
@@ -24,7 +24,8 @@ const projectList = [
   {
     id: 3,
     title: 'e-Commerce Backend',
-    projectID: 'eCommerceBackend',
+    screenshot: require('../../assets/e-commerce-backend.png'),
+    altDesc: 'e-Commerce Backend Screenshot',
     description: 'Project Description 3',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/e-commerce-backend',
@@ -32,7 +33,8 @@ const projectList = [
   {
     id: 4,
     title: 'Employee Tracker',
-    projectID: 'employeeTracker',
+    screenshot: require('../../assets/employee-tracker.png'),
+    altDesc: 'Employee Tracker Screenshot',
     description: 'Project Description 4',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/employee-tracker',
@@ -40,7 +42,8 @@ const projectList = [
   {
     id: 5,
     title: 'Team Profile Generator',
-    projectID: 'teamProfileGenerator',
+    screenshot: require('../../assets/team-profile-generator-visual.png'),
+    altDesc: 'Team Profile Generator Screenshot',
     description: 'Project Description 5',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/team-profile-generator',
@@ -48,7 +51,8 @@ const projectList = [
   {
     id: 6,
     title: 'Notes App',
-    projectID: 'notesApp',
+    screenshot: require('../../assets/notes-app-screenshot.png'),
+    altDesc: 'Notes App Screenshot',
     description: 'Project Description 6',
     deployedLink: 'https://andrewbyoo-notes-app.herokuapp.com/',
     githubLink: 'https://github.com/andrewbyoo/notes-app',
