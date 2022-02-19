@@ -8,7 +8,11 @@ export default function ProjectTemplate({ title, screenshot, altDesc, descriptio
         <Card.Body className='d-flex flex-column justify-content-between'>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button href={deployedLink} target='_blank' rel='noreferrer noopener' className='projectButton'>Deployed</Button>
+          {!deployedLink ? (
+            <Button href='#' className='projectButtonHidden'>Deployed</Button>
+          ) : (
+            <Button href={deployedLink} target='_blank' rel='noreferrer noopener' className='projectButton'>Deployed</Button>
+          )}
           <Button href={githubLink} target='_blank' rel='noreferrer noopener' className='projectButton'>Github</Button>
         </Card.Body>
       </Card>
