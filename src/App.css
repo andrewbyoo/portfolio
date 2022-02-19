@@ -2,10 +2,14 @@
   background-color: rgba(164, 205, 214, 0.3);
 }
 
+.adjustedHeight {
+  height: auto !important;
+}
+
 .bg-image {
   content: '';
-  background-repeat: no-repeat;
   background-size: cover;
+  overflow: scroll;
   position: absolute;
   top: 0px;
   right: 0px;
