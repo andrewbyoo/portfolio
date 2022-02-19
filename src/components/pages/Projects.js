@@ -4,6 +4,7 @@ const projectList = [
   {
     title: 'Project Title 1',
     screenshot: 'Project Screenshot 1',
+    description: 'Project Description 1',
     deployedLink: 'Deployed Link 1',
     githubLink: 'Github Link 1',
 
