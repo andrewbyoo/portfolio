@@ -1,3 +1,4 @@
+import { Container, Col } from 'react-bootstrap';
 import ProjectTemplate from '../ProjectTemplate';
 
 const projectList = [
@@ -51,13 +52,14 @@ const projectList = [
   },
 ]
 
-const projectsRender = projectList.map((project) => <ProjectTemplate title={project.title} screenshot={project.screenshot} description={project.screenshot} deployedLink={project.deployedLink} githubLink={project.githubLink} key={project.id}/>)
+const projectsRender = projectList.map((project) => <ProjectTemplate title={project.title} screenshot={project.screenshot} description={project.screenshot} deployedLink={project.deployedLink} githubLink={project.githubLink} key={project.id} />)
 
 export default function Projects() {
   return (
-    <div>
-      <h2>Personal Projects</h2>
-      {projectsRender}
-    </div>
+    <Container>
+      <Col className='d-flex flex-wrap justify-content-around projectContainer'>
+        {projectsRender}
+      </Col>
+    </Container>
   )
 };
