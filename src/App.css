@@ -22,8 +22,30 @@
   align-items: center;
 }
 
-.homepageRender {
-  background-color: rgba(255, 255, 255, .3);
-  padding: 5px;
+.homepageRender, .aboutRender {
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
   border-radius: 2rem;
+}
+
+.aboutRender {
+  width: 70vw;
+}
+
+.selfPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .selfPhoto {
+    height: 268px;
+    width: auto;
+  }
 }
