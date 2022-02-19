@@ -5,6 +5,12 @@ function Form(){
   const [number, setNumber] = useState('');
   const [email, setEmail] = useState('');
   const [comments, setComments] = useState('');
+
+  const handleInputChange = (event)=> {
+    const { target } = event;
+    const inputType = target.name;
+    const inputValue = target.value;
+  }
 }
 
 export default function Contact() {
