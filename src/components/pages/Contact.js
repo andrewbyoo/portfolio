@@ -2,8 +2,7 @@ export default function Contact() {
   return (
     <div>
       <div className='contactRender'>
-        <h2>Contact Info</h2>
-        <ul>
+        <ul className='contactLinks'>
           <li><a href="tel:2158476562">215.847.6562</a></li>
           <li><a href="mailto: andrewbyoo@gmail.com">andrewbyoo@gmail.com</a></li>
           <li id='github'><a href='https://github.com/andrewbyoo' target='_blank' rel='noreferrer'>GitHub</a></li>
@@ -11,7 +10,6 @@ export default function Contact() {
         </ul>
       </div>
       <div className='contactRender'>
-        <h2>Contact Form</h2>
         <form action="#">
           <ul>
             <li className="contact-column">
