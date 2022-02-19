@@ -45,7 +45,7 @@ const projectList = [
   },
 ]
 
-const projectsRender = projectList.map((project) => <ProjectTemplate projectInfo={project}/>)
+const projectsRender = projectList.map((project) => <ProjectTemplate title={project.title} screenshot={project.screenshot} description={project.screenshot} deployedLink={project.deployedLink} githubLink={project.githubLink}/>)
 
 export default function Projects() {
   return (
