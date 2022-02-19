@@ -1,6 +1,6 @@
 # Portfolio
 ## Description
-This website is about myself which includes a short biography, portfolio, contact and social media links, and a contact form.
+This website is about myself which includes a short biography, portfolio, contact and social media links, and a contact form. Built with React.js.
 
 ## Table of Contents
 - [Visual](#visual)
