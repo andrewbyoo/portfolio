@@ -1,13 +1,17 @@
+import { Card, Button } from 'react-bootstrap';
+
 export default function ProjectTemplate({ title, screenshot, description, deployedLink, githubLink }) {
   return (
     <div>
-      <figure className='project-container'>
-        <article className='projects' id='project1'>
-          <h4>Tech Blog</h4>
-          <a href='https://andrewbyoo-tech-blog.herokuapp.com/' target='_blank' rel='noreferrer'><span>Deployed</span></a
-          ><a href='https://github.com/andrewbyoo/tech-blog' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-      </figure>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+          <Button href={deployedLink} target='_blank' rel='noreferrer noopener' className='deployedButton'>Deployed</Button>
+          <Button href={githubLink} target='_blank' rel='noreferrer noopener' className='githubButton'>Github</Button>
+        </Card.Body>
+      </Card>
     </div>
   )
 };
