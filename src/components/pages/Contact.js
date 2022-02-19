@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-function Form(){
+export default function Contact() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [email, setEmail] = useState('');
   const [comments, setComments] = useState('');
 
-  const handleInputChange = (event)=> {
+  const handleInputChange = (event) => {
     const { target } = event;
     const inputType = target.name;
     const inputValue = target.value;
@@ -32,9 +32,7 @@ function Form(){
     setEmail('');
     setComments('');
   }
-}
 
-export default function Contact() {
   return (
     <div>
       <div className='contactRender'>
@@ -50,28 +48,28 @@ export default function Contact() {
           <ul>
             <li className="contact-column">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" placeholder="First Last" />
+              <input type="text" name="name" placeholder="First Last" value={name} onChange={handleInputChange} />
             </li>
             <br />
             <li className="contact-column">
               <label htmlFor="number">Phone Number</label>
-              <input type="tel" name="number" placeholder="555.555.5555" />
+              <input type="tel" name="number" placeholder="555.555.5555" value={number} onChange={handleInputChange} />
             </li>
             <br />
             <li className="contact-column">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" placeholder="example@example.com" />
+              <input type="text" name="email" placeholder="example@example.com" value={email} onChange={handleInputChange} />
             </li>
             <br />
             <li className="comments">
               <label htmlFor="comments">Comments</label>
-              <textarea name="comments" cols="30" rows="10"></textarea>
+              <textarea name="comments" cols="30" rows="10" value={comments} onChange={handleInputChange}></textarea>
             </li>
             <br />
 
             <li>
               <label htmlFor="hidden-label"></label>
-              <input className="submit" type="submit" value="Submit" />
+              <input className="submit" type="submit" value="Submit" onClick={handleSubmitForm} />
             </li>
           </ul>
         </form>
