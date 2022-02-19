@@ -10,4 +10,6 @@
 
 .projectImages {
   height: 150px;
+  width: auto;
+  background-size: cover;
 }
