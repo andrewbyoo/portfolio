@@ -39,6 +39,37 @@
   width: 70vw;
 }
 
+.contactLinks li {
+  margin: 0px 10px 0px 10px;
+  padding-top: 10px;
+  padding-right: 35px;
+  display: inline-block;
+}
+
+/* GitHub Icon */
+#github::before {
+  display: inline-block;
+  content: "";
+  background-image: url('./assets/GitHub-Mark-120px-plus.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-right: 3px;
+  height: 20px;
+  width: 20px;
+}
+
+/* LinkedIn Icon */
+#linkedin::before {
+  display: inline-block;
+  content: "";
+  background-image: url('./assets/linkedin-logo.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-right: 3px;
+  height: 20px;
+  width: 20px;
+}
+
 form ul {
   width: 100%;
   margin: auto;
