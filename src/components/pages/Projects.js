@@ -1,11 +1,12 @@
 import { Container, Col } from 'react-bootstrap';
 import ProjectTemplate from '../ProjectTemplate';
+import '../projects.css';
 
 const projectList = [
   {
     id: 1,
     title: 'Project Title 1',
-    screenshot: 'Project Screenshot 1',
+    projectClass: 'project1',
     description: 'Project Description 1',
     deployedLink: 'Deployed Link 1',
     githubLink: 'Github Link 1',
@@ -13,7 +14,7 @@ const projectList = [
   {
     id: 2,
     title: 'Tech Blog',
-    screenshot: 'Project Screenshot 2',
+    projectClass: 'techBlog',
     description: 'Project Description 2',
     deployedLink: 'https://andrewbyoo-tech-blog.herokuapp.com/',
     githubLink: 'https://github.com/andrewbyoo/tech-blog',
@@ -21,7 +22,7 @@ const projectList = [
   {
     id: 3,
     title: 'e-Commerce Backend',
-    screenshot: 'Project Screenshot 3',
+    projectClass: 'eCommerceBackend',
     description: 'Project Description 3',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/e-commerce-backend',
@@ -29,7 +30,7 @@ const projectList = [
   {
     id: 4,
     title: 'Employee Tracker',
-    screenshot: 'Project Screenshot 4',
+    projectClass: 'employeeTracker',
     description: 'Project Description 4',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/employee-tracker',
@@ -37,7 +38,7 @@ const projectList = [
   {
     id: 5,
     title: 'Team Profile Generator',
-    screenshot: 'Project Screenshot 5',
+    projectClass: 'teamProfileGenerator',
     description: 'Project Description 5',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/team-profile-generator',
@@ -45,14 +46,14 @@ const projectList = [
   {
     id: 6,
     title: 'Notes App',
-    screenshot: 'Project Screenshot 6',
+    projectClass: 'notesApp',
     description: 'Project Description 6',
     deployedLink: 'https://andrewbyoo-notes-app.herokuapp.com/',
     githubLink: 'https://github.com/andrewbyoo/notes-app',
   },
 ]
 
-const projectsRender = projectList.map((project) => <ProjectTemplate title={project.title} screenshot={project.screenshot} description={project.screenshot} deployedLink={project.deployedLink} githubLink={project.githubLink} key={project.id} />)
+const projectsRender = projectList.map((project) => <ProjectTemplate title={project.title} screenshot={project.screenshot} description={project.description} deployedLink={project.deployedLink} githubLink={project.githubLink} key={project.id} />)
 
 export default function Projects() {
   return (
