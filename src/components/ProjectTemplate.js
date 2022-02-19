@@ -4,7 +4,7 @@ export default function ProjectTemplate({ title, screenshot, description, deploy
   return (
     <div className='individualProject'>
       <Card style={{ width: '20rem' }}>
-        <Card.Img variant="top" className='projectImages' />
+        <Card.Img variant="top" className='projectImages' src={screenshot} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
