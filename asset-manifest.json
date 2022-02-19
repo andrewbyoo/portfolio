@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e7e5144e.css",
+    "main.js": "/portfolio/static/js/main.84a95ace.js",
+    "static/media/self_photo.jpg": "/portfolio/static/media/self_photo.6858ccffac0d12747e42.jpg",
+    "static/media/tech-blog-static-visual.png": "/portfolio/static/media/tech-blog-static-visual.1248e9e3c90b500ebbc8.png",
+    "static/media/notes-app-screenshot.png": "/portfolio/static/media/notes-app-screenshot.d989e8c27f7f5b53ae36.png",
+    "static/media/team-profile-generator-visual.png": "/portfolio/static/media/team-profile-generator-visual.505af61ac29df243cd01.png",
+    "static/media/e-commerce-backend.png": "/portfolio/static/media/e-commerce-backend.38fd4f0437c446794b6e.png",
+    "static/media/JATE-static-visual.png": "/portfolio/static/media/JATE-static-visual.8521c6e1168de3890e7d.png",
+    "static/media/employee-tracker.png": "/portfolio/static/media/employee-tracker.eeee8409ad23b53e3ff5.png",
+    "static/media/linkedin-logo.png": "/portfolio/static/media/linkedin-logo.a680cb8ad2b88be03d17.png",
+    "index.html": "/portfolio/index.html",
+    "main.e7e5144e.css.map": "/portfolio/static/css/main.e7e5144e.css.map",
+    "main.84a95ace.js.map": "/portfolio/static/js/main.84a95ace.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7e5144e.css",
+    "static/js/main.84a95ace.js"
+  ]
+}
