@@ -1,34 +1,22 @@
+import ProjectTemplate from '../ProjectTemplate';
+
+const projectList = [
+  {
+    title: 'Project Title 1',
+    screenshot: 'Project Screenshot 1',
+    deployedLink: 'Deployed Link 1',
+    githubLink: 'Github Link 1',
+
+  }
+]
+
+const projectsRender = projectList.map((project) => <ProjectTemplate projectInfo={project}/>)
+
 export default function Projects() {
   return (
     <div>
       <h2>Personal Projects</h2>
-      <figure className='project-container'>
-        <article className='projects' id='project1'>
-          <h4>Tech Blog</h4>
-          <a href='https://andrewbyoo-tech-blog.herokuapp.com/' target='_blank' rel='noreferrer'><span>Deployed</span></a
-          ><a href='https://github.com/andrewbyoo/tech-blog' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-        <article className='projects' id='project2'>
-          <h4>e-Commerce Backend</h4>
-          <a href='x-github-client://openRepo/https://github.com/andrewbyoo/e-commerce-backend' target='_blank' rel='noreferrer'><span>GitHub Desktop</span></a
-          ><a href='https://github.com/andrewbyoo/e-commerce-backend' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-        <article className='projects' id='project3'>
-          <h4>Employee Tracker</h4>
-          <a href='x-github-client://openRepo/https://github.com/andrewbyoo/employee-tracker' target='_blank' rel='noreferrer'><span>GitHub Desktop</span></a
-          ><a href='https://github.com/andrewbyoo/employee-tracker' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-        <article className='projects' id='project4'>
-          <h4>Team Profile Generator</h4>
-          <a href='x-github-client://openRepo/https://github.com/andrewbyoo/team-profile-generator' target='_blank' rel='noreferrer'><span>GitHub Desktop</span></a
-          ><a href='https://github.com/andrewbyoo/team-profile-generator' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-        <article className='projects' id='project5'>
-          <h4>Notes App</h4>
-          <a href='https://andrewbyoo-notes-app.herokuapp.com/' target='_blank' rel='noreferrer'><span>Deployed</span></a
-          ><a href='https://github.com/andrewbyoo/notes-app' target='_blank' rel='noreferrer'><span>GitHub</span></a>
-        </article>
-      </figure>
+      {projectsRender}
     </div>
   )
 };
