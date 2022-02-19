@@ -1,3 +1,12 @@
+import { useState } from 'react';
+
+function Form(){
+  const [name, setName] = useState('');
+  const [number, setNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [comments, setComments] = useState('');
+}
+
 export default function Contact() {
   return (
     <div>
