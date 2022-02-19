@@ -10,6 +10,16 @@ function Form(){
     const { target } = event;
     const inputType = target.name;
     const inputValue = target.value;
+
+    if (inputType === 'name') {
+      setName(inputValue);
+    } else if (inputType === 'number') {
+      setNumber(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else {
+      setComments(inputValue);
+    }
   }
 }
 
