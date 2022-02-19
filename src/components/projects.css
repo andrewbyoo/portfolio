@@ -1,0 +1,13 @@
+@media only screen and (max-width: 767px) {
+  .projectContainer {
+    padding-top: 250px;
+  }
+}
+
+.individualProject {
+  margin: 5px;
+}
+
+.projectImages {
+  height: 150px;
+}
