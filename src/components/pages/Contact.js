@@ -25,7 +25,7 @@ export default function Contact() {
   const handleSubmitForm = (event) => {
     event.preventDefault();
 
-    alert('Contact form is a work in progress. Please email me directly by click on my email link and I will get to you as soon as possible.')
+    alert('Contact form is a work in progress. Please email me directly by clicking on my email link and I will get to you as soon as possible.')
 
     setName('');
     setNumber('');
