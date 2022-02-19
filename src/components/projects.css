@@ -1,9 +1,9 @@
 .card {
-  width: 25rem !important;
+  width: 26rem !important;
 }
 
 .card-body {
-  height: 200px;
+  height: 225px;
 }
 
 .individualProject {
@@ -14,4 +14,8 @@
   height: 150px;
   width: auto;
   background-size: cover;
+}
+
+.projectButton {
+  width: 100%;
 }
