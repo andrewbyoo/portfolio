@@ -25,4 +25,5 @@ https://andrewbyoo.github.io/portfolio/
 
 ## Questions
 To view more of my projects, you can visit my GitHub page at [andrewbyoo](https://github.com/andrewbyoo).
+
 If you have questions, email me at [andrewbyoo@gmail.com](mailto:andrewbyoo@gmail.com).
