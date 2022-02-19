@@ -1,10 +1,10 @@
 import { Card, Button } from 'react-bootstrap';
 
-export default function ProjectTemplate({ title, screenshot, description, deployedLink, githubLink }) {
+export default function ProjectTemplate({ title, screenshot, altDesc, description, deployedLink, githubLink }) {
   return (
     <div className='individualProject'>
       <Card style={{ width: '20rem' }}>
-        <Card.Img variant="top" className='projectImages' src={screenshot} />
+        <Card.Img variant="top" className='projectImages' src={screenshot} alt={altDesc} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
