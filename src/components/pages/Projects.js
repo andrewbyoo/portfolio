@@ -6,7 +6,7 @@ const projectList = [
   {
     id: 1,
     title: 'Project Title 1',
-    projectClass: 'project1',
+    // screenshot: require('imagepath'),
     description: 'Project Description 1',
     deployedLink: 'Deployed Link 1',
     githubLink: 'Github Link 1',
@@ -14,7 +14,7 @@ const projectList = [
   {
     id: 2,
     title: 'Tech Blog',
-    projectClass: 'techBlog',
+    screenshot: require('../../assets/tech-blog-static-visual.png'),
     description: 'Project Description 2',
     deployedLink: 'https://andrewbyoo-tech-blog.herokuapp.com/',
     githubLink: 'https://github.com/andrewbyoo/tech-blog',
@@ -22,7 +22,7 @@ const projectList = [
   {
     id: 3,
     title: 'e-Commerce Backend',
-    projectClass: 'eCommerceBackend',
+    projectID: 'eCommerceBackend',
     description: 'Project Description 3',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/e-commerce-backend',
@@ -30,7 +30,7 @@ const projectList = [
   {
     id: 4,
     title: 'Employee Tracker',
-    projectClass: 'employeeTracker',
+    projectID: 'employeeTracker',
     description: 'Project Description 4',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/employee-tracker',
@@ -38,7 +38,7 @@ const projectList = [
   {
     id: 5,
     title: 'Team Profile Generator',
-    projectClass: 'teamProfileGenerator',
+    projectID: 'teamProfileGenerator',
     description: 'Project Description 5',
     deployedLink: null,
     githubLink: 'https://github.com/andrewbyoo/team-profile-generator',
@@ -46,7 +46,7 @@ const projectList = [
   {
     id: 6,
     title: 'Notes App',
-    projectClass: 'notesApp',
+    projectID: 'notesApp',
     description: 'Project Description 6',
     deployedLink: 'https://andrewbyoo-notes-app.herokuapp.com/',
     githubLink: 'https://github.com/andrewbyoo/notes-app',
