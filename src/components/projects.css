@@ -19,3 +19,7 @@
 .projectButton {
   width: 100%;
 }
+
+.projectButtonHidden{
+  visibility: hidden;
+}
