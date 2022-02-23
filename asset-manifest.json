@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e7e5144e.css",
-    "main.js": "/portfolio/static/js/main.84a95ace.js",
+    "main.css": "/portfolio/static/css/main.b9b52581.css",
+    "main.js": "/portfolio/static/js/main.8d878715.js",
     "static/media/self_photo.jpg": "/portfolio/static/media/self_photo.6858ccffac0d12747e42.jpg",
     "static/media/tech-blog-static-visual.png": "/portfolio/static/media/tech-blog-static-visual.1248e9e3c90b500ebbc8.png",
     "static/media/notes-app-screenshot.png": "/portfolio/static/media/notes-app-screenshot.d989e8c27f7f5b53ae36.png",
@@ -11,11 +11,11 @@
     "static/media/employee-tracker.png": "/portfolio/static/media/employee-tracker.eeee8409ad23b53e3ff5.png",
     "static/media/linkedin-logo.png": "/portfolio/static/media/linkedin-logo.a680cb8ad2b88be03d17.png",
     "index.html": "/portfolio/index.html",
-    "main.e7e5144e.css.map": "/portfolio/static/css/main.e7e5144e.css.map",
-    "main.84a95ace.js.map": "/portfolio/static/js/main.84a95ace.js.map"
+    "main.b9b52581.css.map": "/portfolio/static/css/main.b9b52581.css.map",
+    "main.8d878715.js.map": "/portfolio/static/js/main.8d878715.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7e5144e.css",
-    "static/js/main.84a95ace.js"
+    "static/css/main.b9b52581.css",
+    "static/js/main.8d878715.js"
   ]
 }
