@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react';
 
-export default function Contact() {
+function ContactForm() {
   const [state, handleSubmit] = useForm('mwkyojnz');
   if (state.succeeded) {
     return <div className='contactRender'>
@@ -44,3 +44,11 @@ export default function Contact() {
     </div>
   )
 };
+
+export default function Contact() {
+  return (
+    <div>
+      <ContactForm />
+    </div>
+  )
+}
