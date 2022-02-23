@@ -41,15 +41,25 @@
 
 .contactLinks li {
   margin: 0px 10px 0px 10px;
-  padding-top: 10px;
   padding-right: 35px;
-  display: inline-block;
+  display: inline;
+}
+
+ul {
+  margin-bottom: 0rem !important;
+}
+
+#successMessage {
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* GitHub Icon */
 #github::before {
   display: inline-block;
-  content: "";
+  content: '';
   background-image: url('./assets/GitHub-Mark-120px-plus.png');
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -61,7 +71,7 @@
 /* LinkedIn Icon */
 #linkedin::before {
   display: inline-block;
-  content: "";
+  content: '';
   background-image: url('./assets/linkedin-logo.png');
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -88,7 +98,8 @@ label {
   margin-right: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   display: inline-block;
   width: 75%;
 }
