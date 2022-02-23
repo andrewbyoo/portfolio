@@ -18,7 +18,7 @@ The following are the features that were implemented:
 * Responsive layout that adjusts to differing screen widths.
 * Links to the deployed and GitHub pages for each project as applicable.
 * Contact links that can be clicked to directly call for the phone number, directly email for the email link, or take you directly to the web pages for the GitHub and LinkedIn links.
-* Contact form that will be an easy on page way to contact me. (Work in progress)
+* Contact form that will be an easy on page way to contact me.
 
 ## Link
 https://andrewbyoo.github.io/portfolio/
