@@ -1,36 +1,9 @@
-import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [comments, setComments] = useState('');
-
-  const handleInputChange = (event) => {
-    const { target } = event;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    if (inputType === 'name') {
-      setName(inputValue);
-    } else if (inputType === 'number') {
-      setNumber(inputValue);
-    } else if (inputType === 'email') {
-      setEmail(inputValue);
-    } else {
-      setComments(inputValue);
-    }
-  }
-
-  const handleSubmitForm = (event) => {
-    event.preventDefault();
-
-    alert('Contact form is a work in progress. Please email me directly by clicking on my email link and I will get to you as soon as possible.')
-
-    setName('');
-    setNumber('');
-    setEmail('');
-    setComments('');
+  const [state, handleSubmit] = useForm('contactForm');
+  if (state.succeeded) {
+    return <div>Thank you for messaging. I will get back to you soon!</div>;
   }
 
   return (
@@ -44,18 +17,8 @@ export default function Contact() {
         </ul>
       </div>
       <div className='contactRender'>
-        <form action="#">
+        <form onSubmit={handleSubmit} id='contactForm'>
           <ul>
-            <li className="contact-column">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" placeholder="First Last" value={name} onChange={handleInputChange} />
-            </li>
-            <br />
-            <li className="contact-column">
-              <label htmlFor="number">Phone Number</label>
-              <input type="tel" name="number" placeholder="555.555.5555" value={number} onChange={handleInputChange} />
-            </li>
-            <br />
             <li className="contact-column">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" placeholder="example@example.com" value={email} onChange={handleInputChange} />
