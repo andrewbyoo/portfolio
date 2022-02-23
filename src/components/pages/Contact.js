@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm('contactForm');
+  const [state, handleSubmit] = useForm('mwkyojnz');
   if (state.succeeded) {
     return <div>Thank you for messaging. I will get back to you soon!</div>;
   }
@@ -17,22 +17,24 @@ export default function Contact() {
         </ul>
       </div>
       <div className='contactRender'>
-        <form onSubmit={handleSubmit} id='contactForm'>
+        <form onSubmit={handleSubmit}>
           <ul>
-            <li className="contact-column">
+            <li>
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" placeholder="example@example.com" value={email} onChange={handleInputChange} />
+              <input id="email" type="email" name="email" placeholder="example@example.com" />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </li>
             <br />
-            <li className="comments">
-              <label htmlFor="comments">Comments</label>
-              <textarea name="comments" cols="30" rows="10" value={comments} onChange={handleInputChange}></textarea>
+            <li>
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10"></textarea>
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </li>
             <br />
 
             <li>
               <label htmlFor="hidden-label"></label>
-              <input className="submit" type="submit" value="Submit" onClick={handleSubmitForm} />
+              <input className="submit" type="submit" value="Submit" disabled={state.submitting} />
             </li>
           </ul>
         </form>
